@@ -1,0 +1,29 @@
+@import "header";
+@import "variable";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 2vh;
+  img {
+    width: 40vw;
+  }
+}

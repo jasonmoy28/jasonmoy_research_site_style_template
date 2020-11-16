@@ -6,7 +6,15 @@
   margin: auto;
   justify-content: space-between;
   height: 10vh;
+  padding: 0 5vw;
   background-color: rgb(245, 245, 245);
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+
   .flex-container-title {
     display: flex;
     align-items: center;
@@ -16,18 +24,18 @@
       font-weight: bold;
     }
   }
+
   .flex-container-nav-bar {
     display: flex;
     justify-self: flex-end;
     align-items: center;
-    padding-right: 5vw;
-  }
-  a {
-    padding: 0 2.5vw;
-    color: $textColor;
-    text-decoration: none;
-  }
-  a:hover {
-    color: rgb(0, 0, 0);
+
+    a {
+      padding: 0 2.5vw;
+      color: $textColor;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -1,0 +1,19 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    color: black;
+    font-weight: 100;
+    font-size: 12px;
+  }
+}

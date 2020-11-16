@@ -47,6 +47,33 @@
   color: black;
 }
 
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+
+footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4vh;
+  color: black;
+  font-weight: 100;
+  font-size: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +119,7 @@ h2 {
 }
 
 .poster-desktop-container iframe {
-  height: 105vh;
+  height: 110vh;
   width: 80vw;
 }
 /*# sourceMappingURL=poster.css.map */

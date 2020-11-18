@@ -28,14 +28,24 @@
   .flex-container-nav-bar {
     display: flex;
     justify-self: flex-end;
-    align-items: center;
-
+    justify-content: space-between;
+    position: relative;
+    // need to specify width & height since position relative is used
+    width: 50%;
+    height: 100%;
+    li {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     a {
-      padding: 0 2.5vw;
       color: $textColor;
+      position: absolute;
     }
     a:hover {
-      text-decoration: underline;
+      border-bottom: solid black 1px;
     }
   }
 }

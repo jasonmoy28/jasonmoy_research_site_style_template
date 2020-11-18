@@ -40,18 +40,35 @@
   display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.nav-bar .flex-container-nav-bar li {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .nav-bar .flex-container-nav-bar a {
-  padding: 0 2.5vw;
   color: #444444;
+  position: absolute;
 }
 
 .nav-bar .flex-container-nav-bar a:hover {
-  text-decoration: underline;
+  border-bottom: solid black 1px;
 }
 
 main {
@@ -151,6 +168,8 @@ h1 {
 .citation-container a {
   color: #222;
   list-style: none;
+  text-decoration: none;
+  border-bottom: solid black 1px;
 }
 
 .citation-container h3 {
@@ -173,8 +192,16 @@ h1 {
   padding: 0.5vh;
 }
 
+.citation-container #source-code {
+  border-bottom: 0px;
+}
+
 .citation-container #source-code p {
   padding: 0.5vh;
+}
+
+.citation-container #source-code #github-logo {
+  border-bottom: none;
 }
 
 .citation-container #source-code .container {

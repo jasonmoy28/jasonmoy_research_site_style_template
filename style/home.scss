@@ -13,7 +13,8 @@
 
 h1 {
   display: flex;
-  justify-content: center;
+  max-width: 80vw;
+  margin: auto;
   padding: 5rem 0 1vh 0;
   font-size: 1.8rem;
   font-weight: 400;
@@ -24,7 +25,7 @@ h1 {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   align-items: center;
-  padding: 10vh 2vw;
+  padding: 5vh 2vw;
 }
 
 .paragraph-container {

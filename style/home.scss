@@ -14,9 +14,10 @@
 h1 {
   display: flex;
   justify-content: center;
-  padding: 7vh 0 1vh 0;
-  font-size: 1.9vw;
+  padding: 5rem 0 1vh 0;
+  font-size: 1.8rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .content-container {
@@ -32,7 +33,7 @@ h1 {
   padding: 5vh;
   p {
     display: inline;
-    font-size: 1.2vw;
+    font-size: 1rem;
   }
 }
 
@@ -77,7 +78,7 @@ h1 {
       img {
         //padding between github-logo and the link
         padding: 0.5vw;
-        width: 2.7vw;
+        width: 2.5vw;
       }
     }
   }

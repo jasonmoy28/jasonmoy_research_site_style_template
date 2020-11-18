@@ -20,7 +20,7 @@
     align-items: center;
     a {
       color: rgb(0, 0, 0);
-      font-size: 1.2vw;
+      font-size: 1rem;
       font-weight: bold;
     }
   }
@@ -37,11 +37,23 @@
     a {
       display: flex;
       justify-content: center;
-      font-size: 1.2vw;
+      font-size: 1rem;
       color: $textColor;
     }
     a:hover {
       border-bottom: solid black 1px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0 1vh 0;
+    .flex-container-nav-bar {
+      height: 50%;
+      width: 70%;
     }
   }
 }

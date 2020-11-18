@@ -8,3 +8,15 @@
 $navBarColor: rgb(245, 245, 245);
 
 $textColor: #444444;
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}

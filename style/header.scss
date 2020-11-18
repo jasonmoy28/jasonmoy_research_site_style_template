@@ -20,7 +20,7 @@
     align-items: center;
     a {
       color: rgb(0, 0, 0);
-      font-size: 16px;
+      font-size: 1.2vw;
       font-weight: bold;
     }
   }
@@ -28,21 +28,17 @@
   .flex-container-nav-bar {
     display: flex;
     justify-self: flex-end;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-around;
+    align-items: center;
     // need to specify width & height since position relative is used
-    width: 50%;
+    width: 40%;
     height: 100%;
-    li {
-      width: 20%;
-      height: 100%;
+
+    a {
       display: flex;
       justify-content: center;
-      align-items: center;
-    }
-    a {
+      font-size: 1.2vw;
       color: $textColor;
-      position: absolute;
     }
     a:hover {
       border-bottom: solid black 1px;

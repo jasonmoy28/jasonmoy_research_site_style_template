@@ -31,7 +31,7 @@
 
 .nav-bar .flex-container-title a {
   color: black;
-  font-size: 16px;
+  font-size: 1.2vw;
   font-weight: bold;
 }
 
@@ -40,31 +40,24 @@
   display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
   height: 100%;
 }
 
-.nav-bar .flex-container-nav-bar li {
-  width: 20%;
-  height: 100%;
+.nav-bar .flex-container-nav-bar a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-bar .flex-container-nav-bar a {
+  font-size: 1.2vw;
   color: #444444;
-  position: absolute;
 }
 
 .nav-bar .flex-container-nav-bar a:hover {
@@ -120,7 +113,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 7vh 0 1vh 0;
-  font-size: 20px;
+  font-size: 1.9vw;
   font-weight: 400;
 }
 
@@ -146,7 +139,7 @@ h1 {
 
 .paragraph-container p {
   display: inline;
-  font-size: 15px;
+  font-size: 1.2vw;
 }
 
 .citation-container {

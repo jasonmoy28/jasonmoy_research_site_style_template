@@ -35,7 +35,7 @@ h1 {
   padding: 5vh;
   p {
     display: inline;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -52,7 +52,7 @@ h1 {
     border-bottom: solid black 1px;
   }
   h3 {
-    font-size: 1.2vw;
+    font-size: 0.9rem;
     font-weight: normal;
     display: flex;
     flex-direction: column;
@@ -80,8 +80,23 @@ h1 {
       img {
         //padding between github-logo and the link
         padding: 0.5vw;
-        width: 2.5vw;
+        width: 2rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .citation-container {
+    align-self: start;
+  }
+  .container {
+    img {
+      width: 1.2rem !important;
     }
   }
 }

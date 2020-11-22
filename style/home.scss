@@ -89,7 +89,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .content-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr;
   }
   .citation-container {
     align-self: start;

@@ -106,6 +106,10 @@
   .nav-bar .flex-container-nav-bar a {
     font-weight: 400;
   }
+  .nav-bar .flex-container-nav-bar a:hover {
+    border-bottom: none !important;
+    color: #ebebeb;
+  }
   .nav-icon-mobile {
     position: absolute;
     display: -webkit-box;

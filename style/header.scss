@@ -76,6 +76,10 @@
     a {
       font-weight: 400;
     }
+    a:hover {
+      border-bottom: none !important;
+      color: rgb(235, 235, 235);
+    }
   }
 
   .nav-icon-mobile {

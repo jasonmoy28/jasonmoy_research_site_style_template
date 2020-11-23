@@ -1,3 +1,15 @@
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;

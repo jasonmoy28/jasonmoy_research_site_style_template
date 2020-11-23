@@ -8,7 +8,6 @@
   box-sizing: border-box;
   font-family: sans-serif;
   overflow-x: hidden;
-  /* !need to find a way to not add !important */
 }
 
 h1 {
@@ -51,6 +50,9 @@ h1 {
     text-decoration: none;
     border-bottom: solid black 1px;
   }
+  p {
+    text-align: center;
+  }
   h3 {
     font-size: 0.9rem;
     font-weight: normal;
@@ -87,9 +89,13 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    padding: 3vh 0 0 0;
+  }
   .content-container {
+    padding: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content min-content;
   }
   .citation-container {
     align-self: start;

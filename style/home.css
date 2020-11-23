@@ -1,3 +1,27 @@
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,7 +201,6 @@ footer p {
           box-sizing: border-box;
   font-family: sans-serif;
   overflow-x: hidden;
-  /* !need to find a way to not add !important */
 }
 
 h1 {
@@ -243,6 +266,10 @@ h1 {
   border-bottom: solid black 1px;
 }
 
+.citation-container p {
+  text-align: center;
+}
+
 .citation-container h3 {
   font-size: 0.9rem;
   font-weight: normal;
@@ -290,11 +317,16 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    padding: 3vh 0 0 0;
+  }
   .content-container {
+    padding: 0;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
   }
   .citation-container {
     -ms-flex-item-align: start;

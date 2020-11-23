@@ -1,3 +1,15 @@
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +151,18 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+
 main {
   padding-bottom: 5vh;
 }
@@ -217,5 +241,11 @@ h2 {
 .poster-desktop-container iframe {
   height: 110vh;
   width: 80vw;
+}
+
+@media screen and (max-width: 400px) {
+  iframe {
+    display: none;
+  }
 }
 /*# sourceMappingURL=poster.css.map */

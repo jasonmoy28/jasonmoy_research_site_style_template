@@ -28,3 +28,13 @@ h1 {
     width: 40vw;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .img-container {
+    grid-template-columns: 1fr;
+    img {
+      width: 80vw;
+      transform: translateX(-3%);
+    }
+  }
+}

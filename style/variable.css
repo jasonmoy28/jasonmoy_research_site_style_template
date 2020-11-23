@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=variable.css.map */
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=variable.css.map */

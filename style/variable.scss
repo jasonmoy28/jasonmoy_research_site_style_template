@@ -1,10 +1,13 @@
-@mixin flexCenter($direction) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: center;
-  align-items: center;
+// *Tablet Size
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 12.5px;
+  }
 }
 
-$navBarColor: rgb(245, 245, 245);
-
-$textColor: #444444;
+// *Mobile size
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+}

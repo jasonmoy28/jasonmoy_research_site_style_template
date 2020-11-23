@@ -1,5 +1,9 @@
 @import "variable";
 
+nav {
+  background-color: rgb(245, 245, 245);
+}
+
 .nav-bar {
   display: flex;
   width: 100vw;
@@ -7,7 +11,6 @@
   justify-content: space-between;
   height: 10vh;
   padding: 0 5vw;
-  background-color: rgb(245, 245, 245);
   a {
     text-decoration: none;
   }
@@ -53,12 +56,30 @@
     position: relative;
   }
 
-  .nav-icon-mobile {
-    position: absolute;
-    top: 0;
-    right: 0;
+  nav {
+    display: flex;
   }
 
+  .nav-icon-mobile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 4;
+    width: 3rem;
+    height: 18px;
+    span {
+      width: 1.2rem;
+      margin: auto;
+      height: 3px;
+      background: #7a7a7a;
+    }
+  }
+  .nav-bar {
+    padding-right: 0;
+  }
   .nav-bar .flex-container-nav-bar {
     position: absolute;
     display: flex;
@@ -79,23 +100,6 @@
     a:hover {
       border-bottom: none !important;
       color: rgb(235, 235, 235);
-    }
-  }
-
-  .nav-icon-mobile {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    right: 0;
-    cursor: pointer;
-    z-index: 4;
-    padding: 1rem 1rem;
-    span {
-      width: 1.2rem;
-      height: 3px;
-      margin: 0.1rem;
-      background: #7a7a7a;
     }
   }
 

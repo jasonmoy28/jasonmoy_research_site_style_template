@@ -8,7 +8,7 @@ try {
   document.getElementById("abstract").innerHTML = indexHTML.abstract;
   document.getElementById("mainTitle").innerHTML = indexHTML.main_title;
 
-  // # Start of adding authors element
+  // # Authors
   // *Added author name and links to the object by creating all html elements in a for loop first
   let elements = [];
   for (let index = 0; index < indexHTML.authors.length; index++) {
@@ -38,23 +38,47 @@ try {
     }
   }
 
-  //# End of adding authors element
-  document.getElementById("affiliationName").innerText =
-    indexHTML.affiliation_name;
-  document.getElementById("labLink").innerHTML = indexHTML.lab_name;
-  if (indexHTML.lab_link != null) {
-    document.getElementById("labLink").href = indexHTML.lab_link;
+  //# Affiliation
+  if (indexHTML.show_affiliation) {
+    document.getElementById("affiliationName").innerText =
+      indexHTML.affiliation_name;
   } else {
-    document.getElementById("labLink").href = "#";
-    document.getElementById("labLink").target = "_self";
-    document.getElementById("labLink").style.borderBottom = "none";
+    document.getElementById("affliation").style.display = "none";
   }
+
+  // # Lab
+  if (indexHTML.show_lab) {
+    document.getElementById("labLink").innerHTML = indexHTML.lab_name;
+    // * Check lab link is null or not, if not show lab link
+    if (indexHTML.lab_link != null) {
+      document.getElementById("labLink").href = indexHTML.lab_link;
+    } else {
+      document.getElementById("labLink").href = "#";
+      document.getElementById("labLink").target = "_self";
+      document.getElementById("labLink").style.borderBottom = "none";
+    }
+  } else {
+    document.getElementById("lab").style.display = "none";
+  }
+
+  // # Source Code
+  // * Check showing source code section or not, if yes, add link
   if (indexHTML.show_source_code) {
     document.getElementById("github-logo").href = indexHTML.github_link;
     document.getElementById("github-text").href = indexHTML.github_link;
   } else {
     const sourceCode = document.getElementById("source-code");
     sourceCode.style.display = "none";
+  }
+
+  // # Publication
+  if (indexHTML.show_publication) {
+    document.getElementById("publication-text").innerText =
+      indexHTML.publication_name;
+    document.getElementById("publication-text").href =
+      indexHTML.publication_link;
+  } else {
+    document.getElementById("publication").style.display = "none";
   }
 } catch (error) {}
 

@@ -102,6 +102,26 @@ h1 {
       }
     }
   }
+  #publication {
+    border-bottom: 0px;
+    p {
+      // within-item padding
+      padding: 0.5vh;
+    }
+    #publication-logo {
+      //no border-bottom for the github logo (all other a-tag have border bottom)
+      border-bottom: none;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      img {
+        //padding between github-logo and the link
+        padding: 0.5vw;
+        width: 2rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

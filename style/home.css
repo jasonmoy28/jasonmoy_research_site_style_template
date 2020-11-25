@@ -346,6 +346,32 @@ h1 {
   width: 2rem;
 }
 
+.citation-container #publication {
+  border-bottom: 0px;
+}
+
+.citation-container #publication p {
+  padding: 0.5vh;
+}
+
+.citation-container #publication #publication-logo {
+  border-bottom: none;
+}
+
+.citation-container #publication .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.citation-container #publication .container img {
+  padding: 0.5vw;
+  width: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     padding: 3vh 0 0 0;

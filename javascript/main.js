@@ -7,7 +7,9 @@ document.querySelector("#footer").textContent = global.footer;
 try {
   document.getElementById("abstract").innerHTML = indexHTML.abstract;
   document.getElementById("mainTitle").innerHTML = indexHTML.main_title;
-  // *Added author name and links to the object by creating all objects in a for loop first
+
+  // # Start of adding authors element
+  // *Added author name and links to the object by creating all html elements in a for loop first
   let elements = [];
   for (let index = 0; index < indexHTML.authors.length; index++) {
     let authorElement = document.createElement("a");
@@ -24,7 +26,7 @@ try {
 
   const authors = document.querySelector("#authors");
   authors.appendChild(elements[0]);
-  //  if elements is  2, use special case. Otherwise, use standard case
+  //  *if elements is  2, use special case. Otherwise, add the elements using standard case
   if (elements.length === 2) {
     authors.classList.add("two-author");
     authors.append(" & ");
@@ -36,13 +38,24 @@ try {
     }
   }
 
-  //# Other
+  //# End of adding authors element
   document.getElementById("affiliationName").innerText =
     indexHTML.affiliation_name;
   document.getElementById("labLink").innerHTML = indexHTML.lab_name;
-  document.getElementById("labLink").href = indexHTML.lab_link;
-  document.getElementById("github-logo").href = indexHTML.github_link;
-  document.getElementById("github-text").href = indexHTML.github_link;
+  if (indexHTML.lab_link != null) {
+    document.getElementById("labLink").href = indexHTML.lab_link;
+  } else {
+    document.getElementById("labLink").href = "#";
+    document.getElementById("labLink").target = "_self";
+    document.getElementById("labLink").style.borderBottom = "none";
+  }
+  if (indexHTML.show_source_code) {
+    document.getElementById("github-logo").href = indexHTML.github_link;
+    document.getElementById("github-text").href = indexHTML.github_link;
+  } else {
+    const sourceCode = document.getElementById("source-code");
+    sourceCode.style.display = "none";
+  }
 } catch (error) {}
 
 // #manuscript.html content

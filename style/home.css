@@ -311,6 +311,8 @@ h1 {
 }
 
 .citation-container #authors a {
+  border-bottom: none !important;
+  text-decoration: underline;
   margin: 0.5vh 0.1vw 0 0.5vw;
 }
 

@@ -14,12 +14,14 @@ try {
   for (let index = 0; index < indexHTML.authors.length; index++) {
     let authorElement = document.createElement("a");
     authorElement.innerText = Object.values(indexHTML.authors[index])[0][0];
+    // *If author link is not null set link a-tag style, else set to non-a-tag style
     if (Object.values(indexHTML.authors[index])[0][1] != null) {
       authorElement.href = Object.values(indexHTML.authors[index])[0][1];
       authorElement.target = "_blank";
     } else {
       authorElement.style.textDecoration = "none";
       authorElement.href = "#";
+      authorElement.style.cursor = "default";
     }
     elements.push(authorElement);
   }

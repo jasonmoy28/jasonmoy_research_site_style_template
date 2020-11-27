@@ -33,10 +33,10 @@ nav {
     justify-self: flex-end;
     justify-content: space-around;
     align-items: center;
+
     // need to specify width & height since position relative is used
     width: 40%;
     height: 100%;
-
     a {
       display: flex;
       justify-content: center;
@@ -45,7 +45,7 @@ nav {
       margin: 3vh 0;
     }
     a:hover {
-      border-bottom: solid black 1px;
+      border-bottom: solid #7a7a7a 1px;
     }
   }
 }

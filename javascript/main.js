@@ -1,3 +1,8 @@
+// #Util functions
+function changeInnerHTMLByID(elementID, text) {
+  document.getElementById(elementID).innerHTML = text;
+}
+
 // #global content
 document.title = global.web_title;
 document.querySelector("#brandName").innerText = global.brand_name;
@@ -42,15 +47,14 @@ try {
 
   //# Affiliation
   if (indexHTML.show_affiliation) {
-    document.getElementById("affiliationName").innerText =
-      indexHTML.affiliation_name;
+    changeInnerHTMLByID("affiliationName", indexHTML.affiliation_name);
   } else {
     document.getElementById("affliation").style.display = "none";
   }
 
   // # Lab
   if (indexHTML.show_lab) {
-    document.getElementById("labLink").innerHTML = indexHTML.lab_name;
+    changeInnerHTMLByID("labLink", indexHTML.lab_name);
     // * Check lab link is null or not, if not show lab link
     if (indexHTML.lab_link != null) {
       document.getElementById("labLink").href = indexHTML.lab_link;
@@ -75,14 +79,15 @@ try {
 
   // # Publication
   if (indexHTML.show_publication) {
-    document.getElementById("publication-text").innerText =
-      indexHTML.publication_name;
+    changeInnerHTMLByID("publication-text", indexHTML.publication_name);
     document.getElementById("publication-text").href =
       indexHTML.publication_link;
   } else {
     document.getElementById("publication").style.display = "none";
   }
-} catch (error) {}
+} catch (error) {
+  console.log();
+}
 
 // #manuscript.html content
 try {

@@ -17,18 +17,21 @@ try {
   // *Added author name and links to the object by creating all html elements in a for loop first
   let elements = [];
   for (let index = 0; index < indexHTML.authors.length; index++) {
-    let authorElement = document.createElement("a");
-    authorElement.innerText = Object.values(indexHTML.authors[index])[0][0];
     // *If author link is not null set link a-tag style, else set to non-a-tag style
+
     if (Object.values(indexHTML.authors[index])[0][1] != null) {
+      let authorElement = document.createElement("a");
+      authorElement.innerText = Object.values(indexHTML.authors[index])[0][0];
       authorElement.href = Object.values(indexHTML.authors[index])[0][1];
       authorElement.target = "_blank";
+      elements.push(authorElement);
     } else {
+      let authorElement = document.createElement("p");
+      authorElement.innerText = Object.values(indexHTML.authors[index])[0][0];
       authorElement.style.textDecoration = "none";
-      authorElement.href = "#";
-      authorElement.style.cursor = "default";
+      authorElement.style.cursor = "text";
+      elements.push(authorElement);
     }
-    elements.push(authorElement);
   }
 
   const authors = document.querySelector("#authors");
@@ -86,7 +89,7 @@ try {
     document.getElementById("publication").style.display = "none";
   }
 } catch (error) {
-  console.log();
+  console.log(error);
 }
 
 // #manuscript.html content

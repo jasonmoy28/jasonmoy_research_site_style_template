@@ -310,13 +310,15 @@ h1 {
           align-items: center;
 }
 
-.citation-container #authors a {
+.citation-container #authors a,
+.citation-container #authors p {
   border-bottom: none !important;
   text-decoration: underline;
   margin: 0.5vh 0.1vw 0 0.5vw;
 }
 
-.citation-container .two-author a {
+.citation-container .two-author a,
+.citation-container .two-author p {
   margin: 0.5vh 0.4vw 0 0.4vw !important;
 }
 

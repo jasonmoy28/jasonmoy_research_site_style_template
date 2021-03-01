@@ -40,14 +40,7 @@ h1 {
 
 .main-result-container {
   display: flex;
-  justify-content: center;
-  img {
-    min-height: 20rem;
-    max-height: 40rem;
-    min-width: 10rem;
-    max-width: 18rem;
-    padding: 0.1rem;
-  }
+  justify-content: space-around;
 }
 
 .citation-container {

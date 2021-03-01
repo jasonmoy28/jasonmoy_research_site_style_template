@@ -13,6 +13,15 @@ try {
   document.getElementById("abstract").innerHTML = indexHTML.abstract;
   document.getElementById("mainTitle").innerHTML = indexHTML.main_title;
 
+  const homePageImgContainer = document.querySelector(".main-result-container");
+  let i = 0;
+  for (const img_src in Object.values(indexHTML.home_page_image)) {
+    const homePageImgElement = document.createElement("img");
+    homePageImgElement.src = Object.values(indexHTML.home_page_image)[i];
+    i++;
+    homePageImgContainer.appendChild(homePageImgElement);
+  }
+
   // # Authors
   // *Added author name and links to the object by creating all html elements in a for loop first
   let elements = [];
@@ -47,7 +56,6 @@ try {
       authors.appendChild(elements[i]);
     }
   }
-
   //# Affiliation
   if (indexHTML.show_affiliation) {
     changeInnerHTMLByID("affiliationName", indexHTML.affiliation_name);

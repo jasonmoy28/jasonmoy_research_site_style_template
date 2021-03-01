@@ -262,10 +262,10 @@ h1 {
 }
 
 .main-result-container img {
-  min-height: 10rem;
-  max-height: 15rem;
+  min-height: 20rem;
+  max-height: 40rem;
   min-width: 10rem;
-  max-width: 15rem;
+  max-width: 18rem;
   padding: 0.1rem;
 }
 

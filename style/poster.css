@@ -170,7 +170,7 @@ nav {
 }
 
 main {
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 
 body {
@@ -244,7 +244,7 @@ h2 {
 }
 
 .poster-desktop-container iframe {
-  height: 110vh;
+  height: 88vh;
   width: 80vw;
 }
 

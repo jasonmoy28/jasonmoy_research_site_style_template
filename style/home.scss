@@ -41,6 +41,10 @@ h1 {
 .main-result-container {
   display: flex;
   justify-content: space-around;
+  img {
+    max-height: 20rem;
+    max-width: 20rem;
+  }
 }
 
 .citation-container {

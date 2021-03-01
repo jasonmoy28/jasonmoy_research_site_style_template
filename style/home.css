@@ -257,6 +257,11 @@ h1 {
       justify-content: space-around;
 }
 
+.main-result-container img {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
 .citation-container {
   padding: 3vh 0 0 0;
   display: -webkit-box;

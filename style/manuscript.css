@@ -149,7 +149,7 @@ nav {
   }
   .nav-bar .flex-container-nav-bar a:hover {
     border-bottom: none !important;
-    color: #ebebeb;
+    color: #cecece;
   }
   .nav-bar-active {
     -webkit-transform: translateX(0%) !important;
@@ -170,7 +170,7 @@ nav {
 }
 
 main {
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 
 body {
